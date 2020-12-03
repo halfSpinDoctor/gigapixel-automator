@@ -12,15 +12,13 @@ This works by driving the UI of Gigapixel AI, so the application needs to be ope
 Download the gigapixel-automator file, put it in a location on the path, then make it execuatable (chmod a+x gigapixel-automator)
 
 ## Usage
-Before calling the automator from the command line, start the Topaz Gigapixel AI application and get all of the settings you would like to use for the batch set up first. E.g. Resize By [Scale | Width | Heigh], supress noise level, remove blur level, output prefix/suffix, ...
+Before calling the automator from the command line, start the Topaz Gigapixel AI application and get all of the settings you would like to use for the batch set up first. E.g. Resize By [Scale | Width | Heigh], supress noise level, remove blur level, output prefix/suffix, etc.
 
 *Note*: You *must* select the "Save To > Custom Folder" option in the OUTPUT section of the UI, or the automation will fail.
 
 `gigapixel-automator <full path to input directory> <full path to output directory>`
 
-The automator will then invoke the "File > Open Images ..." menu, go to the specified input directory, and select all valid images in that directory.
-
-After the images load into the Gigapixel UI, it will select the "Browse..." button on the UI, select the output file, then start processing. The 
+The automator will then invoke the "File > Open Images ..." menu, go to the specified input directory, and select all valid images in that directory. After the images load into the Gigapixel UI, it will select the "Browse..." button on the UI, select the output file, then start processing. Control will return to the command line when processing is complete.
 
 *Notes*:
 * Input and output directory must be a full path to the directory. Use $PWD to make the path relative to the current working directory.
