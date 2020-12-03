@@ -1,0 +1,56 @@
+#!/usr/bin/osascript
+
+on run {filepath, outputpath}
+    local filepath
+    local outputpath
+    local windowTitle
+    
+    set filepath to (filepath as text)
+    set outputpath to (outputpath as text)
+    
+    tell application "System Events" to tell process "Topaz A.I. Gigapixel"
+        ## Clear old items
+        click menu item "Clear All Images" of menu 1 of menu bar item "File" of menu bar 1
+        
+        ## Open the "open" dialog and give it focus
+        click menu item "Open Images..." of menu 1 of menu bar item "File" of menu bar 1
+        delay 2
+        set frontmost to true
+        
+        ## Go to the input folder
+        delay 1
+        keystroke "g" using {command down, shift down}
+        keystroke filepath
+        key code 36
+        
+        ## Highlight all images in folder
+        delay 1
+        key code 124
+        key code 125 using {shift down, option down}
+        key code 36
+        
+        ## Set output folder
+        delay 2
+        set frontmost to true
+        click button "Browse" of window 1
+        set frontmost to true
+        keystroke "g" using {command down, shift down}
+        keystroke outputpath
+        key code 36
+        delay 1
+        key code 36
+        
+        ## Start Processing
+        set frontmost to true
+        click button "Start" of window 1
+        
+        ## Wait to return control until processing is finished
+        set windowTitle to title of front window
+        repeat while windowTitle ≠ "Processing Complete - Topaz Gigapixel AI"
+            set windowTitle to title of front window
+            delay 5
+        end repeat
+        
+    end tell
+end run
+
