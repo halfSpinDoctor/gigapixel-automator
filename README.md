@@ -4,7 +4,7 @@ Command line automation for TopazAI Gigapixel for macOS
 Written with AppleScript, and uses the System Events application to send menu commands and button commands to the UI
 
 ## Introdution
-Currently tested and working for Gigapixel AI v4.1.2 on macOS 10.12 Sierra and 10.13 High Sierra. Verified that this does NOT work for the latest release of Topaz Gigapixel AI, which uses a secondary popup screen for setting the output directory, and generally has vastly revamped UI labels.
+Currently tested and working for Gigapixel AI v4.1.2 on macOS 10.12 Sierra and 10.13 High Sierra. Verified that this does NOT work for the latest release of Topaz Gigapixel AI, which uses a secondary popup screen for setting the output directory and vastly different UI.
 
 This works by driving the UI of Gigapixel AI, so the application needs to be open and se
 
