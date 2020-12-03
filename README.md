@@ -12,7 +12,7 @@ This works by driving the UI of Gigapixel AI, so the application needs to be ope
 Download the gigapixel-automator file, put it in a location on the path, then make it execuatable (chmod a+x gigapixel-automator)
 
 ## Usage
-Before calling the automator from the command line, start the Topaz Gigapixel AI application and get all of the settings you would like to use for the batch set up first. E.g. Resize By [Scale | Width | Heigh], supress noise level, remove blur level, output prefix/suffix, etc.
+Before calling the automator from the command line, start the Topaz Gigapixel AI application and get all of the settings you would like to use for the batch set up first. E.g. Resize By [Scale | Width | Height], supress noise level, remove blur level, output prefix/suffix, etc.
 
 *Note*: You *must* select "Save To > Custom Folder" in the OUTPUT section of the UI, or the automation will fail.
 
