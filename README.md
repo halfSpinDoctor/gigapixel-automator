@@ -6,7 +6,7 @@ Written with AppleScript, and uses the System Events application to send menu co
 ## Introdution
 Currently tested and working for Gigapixel AI v4.1.2 on macOS 10.12 Sierra and 10.13 High Sierra. Verified that this does NOT work for the latest release of Topaz Gigapixel AI, which uses a secondary popup screen for setting the output directory and vastly different UI.
 
-This works by driving the UI of Gigapixel AI, so the application needs to be open and se
+This works by driving the UI of Gigapixel AI, so the application needs to be open and set up the way you want it to be run before it is called.
 
 ## Installation
 Download the gigapixel-automator file, put it in a location on the path, then make it execuatable (chmod a+x gigapixel-automator)
